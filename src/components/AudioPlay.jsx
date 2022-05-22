@@ -17,7 +17,7 @@ class AudioPlay extends Component {
       volumeControl: false,
       playMode: 1,
       isMusicListShow: false
-    };
+    };  
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
