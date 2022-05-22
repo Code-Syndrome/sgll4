@@ -1,15 +1,14 @@
-import React, { memo } from 'react'
-import {renderRoutes} from 'react-router-config'
-import { BrowserRouter, HashRouter } from 'react-router-dom';
-import routes from './router'
+import React from 'react';
+import { Provider } from "react-redux";
+import store from "./store";
+import HYMain from './pages/main';
 
-import LSHAppHeader from '@/components/app-header'
-
-export default memo(function App() {
+function App() {
   return (
-    <HashRouter>
-      <LSHAppHeader/>
-      {renderRoutes(routes)}
-    </HashRouter>
-  )
-})
+    <Provider store={store}>
+      <HYMain/>
+    </Provider>
+  );
+}
+
+export default App;
