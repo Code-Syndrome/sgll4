@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.div`
+export const AppHeaderWrapper = styled.div`
   height: 75px;
-  font-size: 14px;
-  color: #fff;
   background-color: #242424;
+  font-size: 14px;
 
   .content {
-    height: 70px;
-
     display: flex;
     justify-content: space-between;
   }
+
 
   .divider {
     height: 5px;
@@ -25,7 +23,7 @@ export const HeaderLeft = styled.div`
   .logo {
     display: block;
     width: 176px;
-    height: 69px;
+    height: 70px;
     background-position: 0 0;
     text-indent: -9999px;
   }
@@ -33,9 +31,10 @@ export const HeaderLeft = styled.div`
   .select-list {
     display: flex;
     line-height: 70px;
-    
+
     .select-item {
       position: relative;
+
       a {
         display: block;
         padding: 0 20px;
@@ -49,19 +48,18 @@ export const HeaderLeft = styled.div`
           content: "";
           width: 28px;
           height: 19px;
-          background-image: url(${require("@/assets/img/sprite_01.png")});
           background-position: -190px 0;
           top: 20px;
           right: -15px;
         }
       }
 
-      &:hover a, a.active {
+      &:hover a, .active {
         color: #fff;
         background: #000;
         text-decoration: none;
       }
-      
+
       .active .icon {
         position: absolute;
         display: inline-block;
@@ -82,10 +80,9 @@ export const HeaderRight = styled.div`
   color: #ccc;
   font-size: 12px;
 
-
   .search {
-    width: 160px;
-    height: 20px;
+    width: 158px;
+    height: 32px;
     border-radius: 16px;
 
     input {
@@ -103,6 +100,7 @@ export const HeaderRight = styled.div`
     border: 1px solid #666;
     border-radius: 16px;
     margin: 0 16px;
-    background-color: transparent;
   }
-  `
+`
+
+
